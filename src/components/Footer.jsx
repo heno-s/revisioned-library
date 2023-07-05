@@ -10,15 +10,24 @@ export default function Footer() {
         <footer>
             <span>Contact: </span>
             <div className="social-links">
-                <div className="github">
+                <a
+                    className="github"
+                    href="https://github.com/heno-s"
+                >
                     <FontAwesomeIcon icon={faGithub} />
-                </div>
-                <div className="instagram">
+                </a>
+                <a
+                    className="instagram"
+                    href="https://instagram.com/henosury"
+                >
                     <FontAwesomeIcon icon={faInstagram} />
-                </div>
-                <div className="facebook">
+                </a>
+                <a
+                    className="facebook"
+                    href="https://facebook.com/henoplastoveretazky.sury"
+                >
                     <FontAwesomeIcon icon={faFacebook} />
-                </div>
+                </a>
             </div>
         </footer>
     );
