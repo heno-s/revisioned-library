@@ -124,6 +124,14 @@ form button {
 
 .book {
     background-image: url(./assets/book-cover.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 footer {

@@ -8,67 +8,6 @@ export default function Main() {
             <div className="books">
                 <Book />
                 <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book /> <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book /> <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
             </div>
         </main>
     );
