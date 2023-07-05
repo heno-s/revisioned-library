@@ -1,10 +1,10 @@
-export default function Book({ hasRead, title, author, pages }) {
+export default function Book({ isRead, title, author, pages }) {
     return (
         <div className="book">
             <div className="book-header">
                 <button
                     className={`book-status ${
-                        hasRead ? "active" : ""
+                        isRead ? "active" : ""
                     }`}
                 >
                     read
