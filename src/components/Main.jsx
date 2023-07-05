@@ -1,3 +1,13 @@
+import BookForm from "./BookForm";
+import Book from "./Book";
+
 export default function Main() {
-    return <main>Main</main>;
+    return (
+        <main>
+            <BookForm />
+            <div className="books">
+                <Book />
+            </div>
+        </main>
+    );
 }

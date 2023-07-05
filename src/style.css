@@ -14,10 +14,6 @@ footer {
 
 main {
     flex-grow: 1;
-    background-image: url(./assets/library-background.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 header {
@@ -44,6 +40,20 @@ header {
     padding: 6px 8px;
     outline: none;
     border-radius: 6px;
+}
+
+main {
+    background-image: url(./assets/library-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 20px;
+}
+
+.form-container {
+    justify-self: center;
 }
 
 footer {
