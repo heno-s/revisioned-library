@@ -141,9 +141,10 @@ form button {
 }
 
 .book-status {
-    cursor: pointer;
     text-transform: uppercase;
+    background-color: transparent;
     font-size: 1rem;
+    color: inherit;
 }
 
 .book-status::before {
@@ -158,6 +159,18 @@ form button {
     color: green;
     font-weight: bold;
     margin-right: 4px;
+}
+
+.delete-book {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: transparent;
+    color: inherit;
+}
+
+.book-pages {
+    align-self: flex-end;
 }
 
 footer {
