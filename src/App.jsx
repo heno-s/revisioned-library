@@ -11,10 +11,18 @@ function App() {
         setBooks([...books, bookData]);
     }
 
+    function handleDeleteBook(id) {
+        setBooks(books.filter((book) => book.id !== id));
+    }
+
     return (
         <div className="app">
             <Header />
-            <Main handleAddBook={handleAddBook} books={books} />
+            <Main
+                handleAddBook={handleAddBook}
+                handleDeleteBook={handleDeleteBook}
+                books={books}
+            />
             <Footer />
         </div>
     );

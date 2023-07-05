@@ -1,4 +1,11 @@
-export default function Book({ isRead, title, author, pages }) {
+export default function Book({
+    handleDelete,
+    id,
+    isRead,
+    title,
+    author,
+    pages,
+}) {
     return (
         <div className="book">
             <div className="book-header">
@@ -9,7 +16,12 @@ export default function Book({ isRead, title, author, pages }) {
                 >
                     read
                 </button>
-                <button className="delete-book">x</button>
+                <button
+                    className="delete-book"
+                    onClick={() => handleDelete(id)}
+                >
+                    x
+                </button>
             </div>
             <div className="book-body">
                 <span className="book-title">{title}</span>
