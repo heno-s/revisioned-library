@@ -57,13 +57,22 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.book-form-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: #9dee5b77;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
 form > input {
