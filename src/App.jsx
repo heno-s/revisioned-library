@@ -15,10 +15,22 @@ function App() {
         setBooks(books.filter((book) => book.id !== id));
     }
 
+    function handleChangeStatus(id) {
+        setBooks(
+            books.map((book) => {
+                if (book.id === id) {
+                    return { ...book, isRead: !book.isRead };
+                }
+                return book;
+            })
+        );
+    }
+
     return (
         <div className="app">
             <Header />
             <Main
+                handleChangeStatus={handleChangeStatus}
                 handleAddBook={handleAddBook}
                 handleDeleteBook={handleDeleteBook}
                 books={books}

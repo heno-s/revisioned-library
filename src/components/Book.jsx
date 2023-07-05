@@ -1,5 +1,6 @@
 export default function Book({
     handleDelete,
+    handleChangeStatus,
     id,
     isRead,
     title,
@@ -13,6 +14,7 @@ export default function Book({
                     className={`book-status ${
                         isRead ? "active" : ""
                     }`}
+                    onClick={() => handleChangeStatus(id)}
                 >
                     read
                 </button>
