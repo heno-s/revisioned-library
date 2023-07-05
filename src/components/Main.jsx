@@ -6,8 +6,18 @@ export default function Main() {
         <main>
             <BookForm />
             <div className="books">
-                <Book />
-                <Book />
+                <Book
+                    title={"Harry Potter"}
+                    author={"J. K. Rowling"}
+                    hasRead={true}
+                    pages={5}
+                />
+                <Book
+                    title={"No Way"}
+                    author={"Winston Churchil"}
+                    hasRead={false}
+                    pages={345}
+                />
             </div>
         </main>
     );

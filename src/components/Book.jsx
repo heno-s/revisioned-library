@@ -1,15 +1,21 @@
-export default function Book() {
+export default function Book({ hasRead, title, author, pages }) {
     return (
         <div className="book">
             <div className="book-header">
-                <button className="book-status">read</button>
+                <button
+                    className={`book-status ${
+                        hasRead ? "active" : ""
+                    }`}
+                >
+                    read
+                </button>
                 <button className="delete-book">x</button>
             </div>
             <div className="book-body">
-                <span className="book-title">Harry Potter</span>
-                <span className="book-author">J. K. Rowling</span>
+                <span className="book-title">{title}</span>
+                <span className="book-author">{author}</span>
             </div>
-            <div className="book-pages">8</div>
+            <span className="book-pages">{pages}</span>
         </div>
     );
 }
