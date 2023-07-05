@@ -2,7 +2,7 @@ export default function Book() {
     return (
         <div className="book">
             <div className="book-header">
-                <div className="book-status">READ</div>
+                <div className="book-status">read</div>
                 <div className="delete-book">x</div>
             </div>
             <div className="book-body">
