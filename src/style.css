@@ -60,8 +60,13 @@ footer {
     gap: 12px;
 }
 
-.social-links > button {
+.social-links > a {
     font-size: inherit;
-    color: inherit;
+    color: #73ff00;
+    background-color: transparent;
+}
+
+.social-links > a:hover {
+    color: #088efd;
     background-color: transparent;
 }
