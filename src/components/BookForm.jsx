@@ -5,6 +5,7 @@ export default function BookForm({ handleSubmit }) {
     const [author, setAuthor] = useState("");
     const [pages, setPages] = useState("");
     const [isRead, setIsRead] = useState(false);
+    const [id, setId] = useState(Math.random().toString(16).slice(2));
 
     function handleTitleInput(evt) {
         setTitle(evt.target.value);
@@ -27,6 +28,7 @@ export default function BookForm({ handleSubmit }) {
         setAuthor("");
         setPages("");
         setIsRead(false);
+        setId(Math.random().toString(16).slice(2));
     }
 
     return (
@@ -35,7 +37,13 @@ export default function BookForm({ handleSubmit }) {
             <form
                 onSubmit={(evt) => {
                     evt.preventDefault();
-                    handleSubmit({ title, author, pages, isRead });
+                    handleSubmit({
+                        id,
+                        title,
+                        author,
+                        pages,
+                        isRead,
+                    });
                     clearForm();
                 }}
             >
