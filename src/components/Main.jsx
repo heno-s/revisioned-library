@@ -7,6 +7,68 @@ export default function Main() {
             <BookForm />
             <div className="books">
                 <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book /> <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book /> <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
+                <Book />
             </div>
         </main>
     );
