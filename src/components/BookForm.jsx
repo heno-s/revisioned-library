@@ -44,12 +44,14 @@ export default function BookForm({ handleSubmit }) {
                     placeholder="title"
                     value={title}
                     onChange={handleTitleInput}
+                    required
                 />
                 <input
                     type="text"
                     placeholder="author"
                     value={author}
                     onChange={handleAuthorInput}
+                    required
                 />
                 <input
                     type="number"
@@ -57,6 +59,7 @@ export default function BookForm({ handleSubmit }) {
                     min="1"
                     value={pages}
                     onChange={handlePagesInput}
+                    required
                 />
                 <div className="bottom-controls">
                     <div className="read-check">
