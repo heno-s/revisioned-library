@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function BookForm() {
+export default function BookForm({ handleSubmit }) {
     const [title, setTitle] = useState("");
     const [author, setAuthor] = useState("");
     const [pages, setPages] = useState("");
@@ -22,10 +22,23 @@ export default function BookForm() {
         setIsRead(evt.target.checked);
     }
 
+    function clearForm() {
+        setTitle("");
+        setAuthor("");
+        setPages("");
+        setIsRead(false);
+    }
+
     return (
         <div className="form-container">
             <span className="book-form-title">new book</span>
-            <form>
+            <form
+                onSubmit={(evt) => {
+                    evt.preventDefault();
+                    handleSubmit({ title, author, pages, isRead });
+                    clearForm();
+                }}
+            >
                 <input
                     type="text"
                     placeholder="title"
