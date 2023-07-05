@@ -169,6 +169,22 @@ form button {
     color: inherit;
 }
 
+.book-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    font-family: vibes;
+}
+
+.book-title {
+    font-size: 1.6rem;
+}
+
+.book-author {
+    font-size: 1rem;
+}
+
 .book-pages {
     align-self: flex-end;
 }
