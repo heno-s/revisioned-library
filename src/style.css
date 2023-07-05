@@ -85,6 +85,26 @@ form > input {
     justify-content: space-between;
 }
 
+.read-check {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.read-check:has(:checked) label {
+    color: #65e9a7;
+}
+
+.read-check input {
+    cursor: pointer;
+    accent-color: #65e9a7;
+}
+
+.read-check label {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
 footer {
     display: flex;
     flex-direction: column;
