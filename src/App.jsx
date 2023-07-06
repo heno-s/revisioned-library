@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import useLocalStorage from "./components/useLocalStorage";
 import "./style.css";
 
 function App() {
-    const [books, setBooks] = useState([
+    const [books, setBooks] = useLocalStorage("books", [
         {
             id: 1,
             title: "Harry Potter",
