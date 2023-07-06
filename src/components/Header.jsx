@@ -1,10 +1,11 @@
 import { useState } from "react";
 
-export default function Header() {
+export default function Header({ handleSearch }) {
     const [title, setTitle] = useState("");
 
-    function handleTitleChange(evt) {
+    function handleSearchType(evt) {
         setTitle(evt.target.value);
+        handleSearch(evt.target.value);
     }
 
     return (
@@ -17,7 +18,7 @@ export default function Header() {
                         type="text"
                         placeholder="title"
                         value={title}
-                        onChange={handleTitleChange}
+                        onChange={handleSearchType}
                     />
                 </div>
             </div>

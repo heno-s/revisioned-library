@@ -1,11 +1,41 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import "./style.css";
 
 function App() {
-    const [books, setBooks] = useState([]);
+    const [books, setBooks] = useState([
+        {
+            id: 1,
+            title: "Harry Potter",
+            author: "J. K. Rowling",
+            pages: 285,
+            isRead: false,
+        },
+        {
+            id: 2,
+            title: "Marry Trottel",
+            author: "J. K. Bowling",
+            pages: 300,
+            isRead: true,
+        },
+    ]);
+    const [displayedBooks, setDisplayedBooks] = useState(books);
+    const [searchText, setSearchText] = useState("");
+
+    useEffect(() => {
+        if (searchText === "") {
+            setDisplayedBooks([...books]);
+        } else {
+            setDisplayedBooks(
+                books.filter((book) => {
+                    const regexp = new RegExp(searchText, "i");
+                    return regexp.test(book.title);
+                })
+            );
+        }
+    }, [searchText, books]);
 
     function handleAddBook(bookData) {
         setBooks([...books, bookData]);
@@ -26,14 +56,18 @@ function App() {
         );
     }
 
+    function handleSearch(title) {
+        setSearchText(title);
+    }
+
     return (
         <div className="app">
-            <Header />
+            <Header handleSearch={handleSearch} />
             <Main
                 handleChangeStatus={handleChangeStatus}
                 handleAddBook={handleAddBook}
                 handleDeleteBook={handleDeleteBook}
-                books={books}
+                booksToDisplay={displayedBooks}
             />
             <Footer />
         </div>

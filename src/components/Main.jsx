@@ -5,13 +5,13 @@ export default function Main({
     handleAddBook,
     handleDeleteBook,
     handleChangeStatus,
-    books,
+    booksToDisplay,
 }) {
     return (
         <main>
             <BookForm handleSubmit={handleAddBook} />
             <div className="books">
-                {books.map((book) => (
+                {booksToDisplay.map((book) => (
                     <Book
                         handleChangeStatus={handleChangeStatus}
                         handleDelete={handleDeleteBook}
