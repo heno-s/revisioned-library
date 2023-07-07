@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.657b29cb.css",
+    "main.js": "/static/js/main.ff80f107.js",
+    "static/media/library-background.png": "/static/media/library-background.e83caba7701f42d1cfb6.png",
+    "static/media/GreatVibes-Regular.ttf": "/static/media/GreatVibes-Regular.6d246c3b51d7eb58b13a.ttf",
+    "static/media/Tangerine-Bold.ttf": "/static/media/Tangerine-Bold.290f181679aa2ef327e4.ttf",
+    "static/media/Tangerine-Regular.ttf": "/static/media/Tangerine-Regular.6b04eb83dd71e2762243.ttf",
+    "index.html": "/index.html",
+    "main.657b29cb.css.map": "/static/css/main.657b29cb.css.map",
+    "main.ff80f107.js.map": "/static/js/main.ff80f107.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.657b29cb.css",
+    "static/js/main.ff80f107.js"
+  ]
+}
