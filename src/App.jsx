@@ -9,15 +9,15 @@ function App() {
     const [books, setBooks] = useLocalStorage("books", [
         {
             id: 1,
-            title: "Harry Potter",
+            title: "Harry Potter (Example 1)",
             author: "J. K. Rowling",
             pages: 285,
             isRead: false,
         },
         {
             id: 2,
-            title: "Marry Trottel",
-            author: "J. K. Bowling",
+            title: "Mary Poppins  (Example 2)",
+            author: "P. L. Travers",
             pages: 300,
             isRead: true,
         },
