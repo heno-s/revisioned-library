@@ -175,6 +175,7 @@ form button {
     gap: 12px;
     align-items: center;
     font-family: vibes;
+    text-align: center;
 }
 
 .book-title {
